@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script language="javascript">
+var area,bese,altura;
+function resul() {
+base=parseInt(document.getElementById("textbase").value);
+altura=parseInt(document.getElementById("textaltura").value);
+area=(base*altura)/2;
+alert("El área es:"+ area);
+}
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Área de un triángulo</h1>
+	</div>
+	<div data-role="content">	
+	<table width="0" border="0">
+  <tr>
+    <td>
+      <label for="textinput">Introduce el valor de la base</label>
+      
+    </td>
+    <td><input type="text" name="textbase" id="textbase" value=""  /></td>
+  </tr>
+  <tr>
+    <td><label for="textinput">Introduce el valor de la altura</label></td>
+    <td><input type="text" name="textaltura" id="textaltura" value=""  /></td>
+  </tr>
+  <tr>
+    <td><label for="textinput">Calcular área del triángulo</label></td>
+    <td><button onClick="resul()">CALCULAR</button></td>
+  </tr>
+</table>
+
+    </div>
+	<div data-role="footer">
+		<h4>Autor: Ingrid Samantha Dominguez Lezama</h4>
+	</div>
+</div>
+
+
+</body>
+</html>
